@@ -62,6 +62,7 @@ mvn clean test
 2) After test execution is finished perfrom cmd command for generate report 
 mvn allure:report
 3) Navigate to target/site/index.html and open it
+```
 
-Report example:
-![alt text](https://ibb.co/hVKvkMv)
+![report_example](https://user-images.githubusercontent.com/12085549/172180285-cce6d302-8784-4dc6-aff3-111a29d5a4c2.jpg)
+
