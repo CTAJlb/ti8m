@@ -50,7 +50,7 @@ mvn clean test
 
 Separate scenario:
 You can trigger any scenario by input tags in cucumber options
-mvn clean test "-Dcucumber.options=--tags @004"
+mvn clean test -D"cucumber.filter.tags=@004"
 ```
 
 #### Allure Reports 
