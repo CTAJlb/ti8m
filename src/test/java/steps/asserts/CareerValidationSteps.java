@@ -41,8 +41,7 @@ public class CareerValidationSteps {
 
     @Then("[Career page] validate that jobs counter increased")
     public void careerPageValidateThatJobsCounterIncreased() {
-        SoftAssert softAssert = new SoftAssert();
         careerPage.waitFor(() -> careerPage.filterBlock.jobList.size() > scenarioContext.testData.getJobCounter(), 2);
-        softAssert.assertEquals(careerPage.filterBlock.getJobsSize(), scenarioContext.testData.getJobCounter(), "Jobs counter is not increased");
+        Assert.assertEquals(careerPage.filterBlock.getJobsSize(), scenarioContext.testData.getJobCounter(), "Jobs counter is not increased");
     }
 }
